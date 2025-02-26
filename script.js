@@ -102,4 +102,17 @@ document.querySelectorAll(".button").forEach((button) => {
   })
 })
 
-// Toggle
+// Buttons
+
+document.getElementById("guidesBtn").addEventListener("click", function() {
+  window.open("https://www.developerhub.cuscal.com.au/hub/docs", "_blank");
+});
+
+  document.getElementById("apiBtn").addEventListener("click", function() {
+    window.open("https://www.developerhub.cuscal.com.au/hub/reference", "_blank");
+});
+
+document.getElementById("login8").addEventListener("click", function() {
+  window.open("https://www.developerhub.cuscal.com.au/login?redirect_uri=/", "_blank");
+});
+
