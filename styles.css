@@ -679,4 +679,9 @@ body {
   .getting-started h2 {
     font-size: 1.75rem;
   }
+  .features-description {
+    text-align: center;
+    margin: 0 auto 2rem;
+    color: var(--color-text-muted);
+  }
 }
