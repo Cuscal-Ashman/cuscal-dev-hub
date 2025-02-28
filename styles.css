@@ -627,3 +627,56 @@ body {
 .close:hover {
   color: red;
 }
+
+
+/* Getting Started Section */
+.getting-started {
+  position: relative;
+  z-index: 10;
+  padding: 4rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.getting-started h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-instructions {
+  border-radius: 0.5rem;
+  backdrop-filter: blur(8px);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.login-instructions iframe {
+  border-radius: 0.375rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments for Getting Started section */
+@media (max-width: 768px) {
+  .getting-started {
+    padding: 3rem 0;
+  }
+  
+  .getting-started h2 {
+    font-size: 2rem;
+  }
+  
+  .login-instructions {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .getting-started {
+    padding: 2rem 0;
+  }
+  
+  .getting-started h2 {
+    font-size: 1.75rem;
+  }
+}
