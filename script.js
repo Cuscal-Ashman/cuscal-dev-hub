@@ -73,6 +73,7 @@ if (featuresGrid) {
     featuresGrid.appendChild(featureCard);
   });
 
+
   // Attach event listeners for dynamically created buttons
   document.querySelectorAll(".guides-button").forEach((button) => {
     button.addEventListener("click", function () {
@@ -154,22 +155,5 @@ if (loginBtn) {
   });
 }
 
-// Get modal elements
-document.addEventListener("DOMContentLoaded", function() {
-  const openModal = document.getElementById("openModal");
-  const modal = new bootstrap.Modal(document.getElementById("myModal"));
 
-  // Ensure modal triggers correctly when clicking "Getting Started"
-  openModal.addEventListener("click", function(event) {
-      event.preventDefault(); // Prevent link from navigating
-      modal.show();
-  });
-
-  // Ensure modal closes when clicking '×' or outside the modal
-  document.querySelectorAll("[data-dismiss='modal']").forEach((button) => {
-      button.addEventListener("click", function() {
-          modal.hide();
-      });
-  });
-});
 
