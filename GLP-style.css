@@ -1,0 +1,520 @@
+html * {
+    font-family: Roboto !important;
+  }
+
+.roboto-<uniquifier> {
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+  html {
+    height: 100%;
+     box-sizing: border-box;
+  }
+  
+  body {
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    padding-bottom: 1.1rem;
+    box-sizing: inherit;
+  }
+  
+  .rm-Header-bottom {
+        display: flex;
+     
+  }
+  [class*="Header-search_feather"] {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+  }
+  
+  .img-fluid {
+     min-height: 100% !important;
+  }
+  
+  .rm-SearchToggle {
+      border-radius: 0 !important;
+  }
+  .cuscal-info {
+        padding-left: 6rem;
+      padding-right: 6rem;
+          font-size: 1.5rem;
+      font-weight: 700;
+  }
+  
+  .intro-padding::before {
+      content: "";
+      position: absolute;
+      border-style: solid;
+      border-color: #da291c #da291c transparent transparent;
+      border-width: 15px 15px 0 0;
+      width: 60px;
+      height: 60px;
+      bottom: 2rem;
+      right: 0;
+      transform: rotate(90deg);
+    margin-right: 5% ;
+  }
+  .intro-padding::after { 
+      content: "";
+      position: absolute;
+      border-style: solid;
+      border-color: #da291c #da291c transparent transparent;
+      border-width: 15px 15px 0 0;
+      width: 60px;
+      height: 60px;
+      top: 2rem;
+      left: 0;
+      transform: rotate(-90deg);
+    margin-left: 5%;
+  }
+  
+  .rm-Header-bottom span {
+    /*font-size: 24px !important;*/
+    color: white !important;
+  }
+  
+  .content-padding {
+    padding: 10px;
+  }
+  
+  .exp-doc-head {
+    padding-top:20px;
+    padding-left: 20px;
+  }
+  .explore-doc {
+          color: #373737; 
+          font-size: 1.25rem;  
+          font-weight: 700; 
+          letter-spacing: 0.14px; 
+          word-wrap: break-word;
+      }
+  .exp-domain-head {
+    padding-top:20px;
+    padding-left: 20px;
+    padding-bottom: 70px;
+  }
+
+@media screen and (max-width: 768px) {
+    .exp-domain-head {
+        padding-bottom: 140px; /* Reduce padding for mobile */
+    }
+}
+
+  .d-image {
+          height: 71px;
+          width: 71px;
+          margin-top: 4%;
+      }
+  .no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+  .intro-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background: #F7F7F7;
+  }
+  .domain-box{
+          background: #FFFFFF;
+        border-top:    1px #DA291C solid;
+        border-right:  1px #DA291C solid;
+           border-left:  1px #DA291C solid;
+      border-bottom:  1px #9F9F9F solid;
+  }
+  .domain-font {
+          color: #373737 !important;
+           font-size: 0.875rem !important;
+        font-family: Verdana !important;
+        font-weight: 400;
+         letter-spacing: 0.14px;
+  }
+  
+  .col-sm-1 {
+    max-width: 6.333333% !important;
+  }
+  
+  .text-center {
+      margin-top: 1%;
+  }
+  .icon-font {
+    font-size: 1.5rem;
+  }
+  .link-text {
+    font-size: 0.875rem;
+  }
+  
+  .text-center a:hover {
+      color: #DA291C !important;
+      }
+  
+      footer a:hover, a:focus, a:active {
+        text-decoration: none;
+      color: #DA291C !important;
+      }
+  
+      .footer-header{
+          color: white;
+          font-size: 1rem;
+          font-family: Verdana;
+          font-weight: 700;
+          line-height: 24px;
+          letter-spacing: 0.14px;
+          word-wrap: break-word;
+      }
+    .footer_content {
+        font-family: Verdana;
+        letter-spacing: 0.14px;
+    }
+      .footer_content a {
+        color: #fff;
+        text-align: left;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 24px;
+        word-wrap: break-word;
+    }
+      .footer_content li {
+          display: inline-block;
+          padding-right: 5%;
+      }
+      .main-footer {
+       background-image:url(https://files.readme.io/89459e78aa9f6c7c34078a935a32f23a73136192d92921c8f342f8486a043068-Base.png);
+          position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      }
+  
+  /* Removes “last updated” portion of guides */
+  div.UpdatedAt {   
+    display: none;
+  }
+  
+  /** Dark Theme Start*/
+  [data-color-mode=dark] {
+     --color-text-default: #ffffff;
+  }
+  [data-color-mode=dark] .intro-padding {
+      background: rgba(0, 0, 0, 0.8);
+  }
+  
+           [data-color-mode="dark"] .container .card .cardHeader {
+          background : linear-gradient(120deg,#e1e1e1 100%,transparent 100%) !important;
+                  }
+  
+        [data-color-mode="dark"] .product-h2 {
+             color: var(--project-color-primary3);
+          }
+  /** New Dark theme*/
+  [data-color-mode="dark"] .ThemeContext_line .rm-Header {
+    --Header-background: #000000;
+  }
+  
+  [data-color-mode="dark"] .exp-doc-head, [data-color-mode="dark"] .exp-domain-head, [data-color-mode="dark"] .domain-box {
+    background: #000000;
+  }
+  
+  [data-color-mode="dark"] p, [data-color-mode="dark"] .explore-doc {
+    color: #FFFFFF !important;
+  }
+  [data-color-mode="dark"] .domain-intro, [data-color-mode="dark"] .domain-font {
+    color: rgba(255, 255, 255, 0.50) !important;
+  }
+  [data-color-mode=dark] .rm-SearchToggle {
+      --SearchToggle-color: #FFFFFF;
+  }
+  [data-color-mode=dark] .rm-Sidebar {
+      background: #242E34;
+  }
+  [data-color-mode=dark] .rm-Playground {
+      background: #000000;
+  }
+  
+  [data-color-mode="dark"] body {
+    background-color: #000000;
+  }
+  
+  /** Dark Theme End*/
+  
+  /** As per UX **/
+  .container-fluid {
+      padding-top: 0px;
+      padding-bottom: 70px;
+   }
+    .no-padding {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .img-text{
+      position: relative;
+  }
+  .overlay-text {
+      position: absolute;
+      top: 8rem;
+  }
+  
+  .overlay-text::before {
+      content: "";
+      position: absolute;
+      border-style: solid;
+      border-color: #da291c #da291c transparent transparent;
+      border-width: 15px 15px 0 0;
+      width: 60px;
+      height: 60px;
+      bottom: 0;
+      right: 0;
+      transform: rotate(90deg);
+    margin-right: 5% ;
+  }
+  .overlay-text::after { 
+      content: "";
+      position: absolute;
+      border-style: solid;
+      border-color: #da291c #da291c transparent transparent;
+      border-width: 15px 15px 0 0;
+      width: 60px;
+      height: 60px;
+      top: 0;
+      left: 0;
+      transform: rotate(-90deg);
+    margin-left: 5%;
+  }
+  .Input {
+    --Input-border-active: #DA291C;
+    --Input-border-focus: #DA291C;
+  }
+  .Toggle-input:checked+.Toggle-display, .Toggle_checkbox .Toggle-input:indeterminate+.Toggle-display {
+      background: #DA291C;
+      border-color: #DA291C;
+  }
+  
+  /*Hide "discussions" title on discussions section*/
+  [class^="Discuss-header_title"] {
+      display: none;
+  }
+  
+  /*Fix back icon in discussions*/
+  html .fa-chevron-circle-left:before {
+      font-family: 'fontawesome';
+  }
+  
+  .icon-arrow-left2:before {
+      content: "\f137";
+  }
+  
+  .modal-dialog {
+      max-width: 900px !important;
+      margin: 1.75rem auto;
+  }
+  
+  /*Hides "view suggestion" button*/
+  form#suggestion-submit-details footer a:nth-child(2) {
+      display: none !important;
+  }
+  
+  
+  /* Update text color for the Getting started popup modal in dark mode theme */
+  [data-color-mode='dark'] .modal-content,
+  [data-color-mode='dark'] .modal-content p{
+      color: black !important; /* Set text color to black */
+  }
+  
+  [data-color-mode="dark"] .content-toc ul {
+      background: #242e34 !important;
+  }
+
+/* Custom CSS for Payments Project */
+
+/*Color change on hover of paginated content at Payment Guides*/
+.rm-Pagination > a:hover,.rm-Pagination > a:hover span,.rm-Pagination > a:hover div, .rm-Pagination >a>div:focus,.rm-Pagination> a>div:active {
+	  text-decoration: none;
+    color: #DA291C !important;
+}
+
+header h1, .App .rm-ReferenceMain header h1, .App .rm-Changelog header h1, .App .rm-Discuss header h1, .App .rm-CustomPage header h1 {
+    font-size: 1.375rem !important;
+    line-height: 1.2;
+}
+.field-description h2, .markdown-body h2 {
+    font-size: 1.25rem;
+}
+
+.field-description h3, .markdown-body h3 {
+    font-size: 1.125rem;
+}
+
+
+.rm-Changelog a,[class*="Discuss-back"] {
+  color: var(--color-text-default);
+}
+
+[class^="DiscussPost-metabox_answered"]{
+  background-color: var(--project-color-primary);
+}
+
+.rm-Changelog .Button>span {
+    color: var(--color-text-default);
+}
+
+.rm-Changelog .Button:hover>span , .PageThumbs .Button:hover, .rm-Changelog a:hover, .rm-Discuss a:hover > div.h2, [class*="Discuss-back"]:hover{
+     color: #DA291C !important;
+}
+
+.rm-Changelog h1{
+  font-size: 1.375rem;
+}
+.rm-Changelog p{
+  color: black;
+}
+.rm-Changelog .icon-plus1 {
+  background: #DA291C;
+}
+.callout.callout_info, .callout.callout_okay {
+    --background: rgba(0, 0, 0, 0.10);
+    --title: #46b8da;
+    --border: none;
+    /*--border: #DA291C;*/
+}
+.callout.callout .callout-heading>* {
+    color: var(--color-text-default)!important;
+
+}
+
+.content-toc .tocHeader {
+  font-size: 0.75rem !important;
+  color: var(--color-text-default) !important;
+}
+.content-toc .toc-list>li:not(.toc-children) :first-child {
+    background: none;
+}
+
+.content-toc a {
+    color: var(--color-text-default) !important;
+    font-size: 0.75rem !important;
+}
+
+.content-toc a:hover, a:focus, a:active {
+    color: #DA291C !important;
+}
+
+/*Fix Back To All font-size at Discussion Tab*/
+.rm-Discuss [class*="Discuss-back"] {
+  font-size: 14px;
+}
+
+
+.Header-search_featherYsmQBn55F3d9 {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/** Dark Theme*/
+[data-color-mode=dark] .rm-Sidebar {
+     background: none !important; 
+}
+
+/*custom text on password protect page */
+ body > div > div > p:nth-child(2){
+     height:82px;
+     overflow:hidden;
+}
+ .password_page p:nth-child(2):before {
+     content: "Please email developerhub@cuscal.com.au to get your corporate email address whitelisted for access. ";
+     color: white;
+     display: block;
+     max-width:500px;
+     line-height:40px;
+     font-size:20px;
+}
+ .password_page p:nth-child(3) {
+     display:none;
+}
+
+.DiscussEditorWrapper-large2K8GLI2aml35 {
+    min-height: 200px;
+  	max-width: 785px !important;
+}
+/* Custom Design */
+
+.APIMethod,span[class*=' SearchResults-Method'],span[class^=SearchResults-Method] {
+    font: normal normal 600 11px/11px Arial, Helvetica, sans-serif!important;
+    letter-spacing: .22px;
+    text-shadow: none!important;
+    border-radius: 9px!important;
+    box-shadow: none!important;
+    padding: 4px 8px
+}
+
+.APIMethod {
+    height: 18px!important
+}
+
+span[class*=' SearchResults-Method'],span[class^=SearchResults-Method] {
+    height: 10px!important
+}
+
+.APIMethod_fixedWidth {
+    width: auto!important
+}
+
+.APIMethod_get,span[class*=' SearchResults-Method_get'],span[class^=SearchResults-Method_get] {
+    color: #20b193!important;
+    background: #d6f4ec 0 0 no-repeat padding-box!important;
+}
+
+.APIMethod_post,span[class*=' SearchResults-Method_post'],span[class^=SearchResults-Method_post] {
+    color: #4f65f1!important;
+    background: #4f65F11F 0 0 no-repeat padding-box!important
+}
+
+.APIMethod_patch,span[class*=' SearchResults-Method_patch'],span[class^=SearchResults-Method_patch] {
+    color: #ff9d00!important;
+    background: #ffe9C67B 0 0 no-repeat padding-box!important
+}
+
+.APIMethod_delete,span[class*=' SearchResults-Method_delete'],span[class^=SearchResults-Method_delete] {
+    color: #ff5f7e!important;
+    background: #ffeaef 0 0 no-repeat padding-box!important
+}
+
+.APIMethod_put,span[class*=' SearchResults-Method_put'],span[class^=SearchResults-Method_put] {
+    color: #7a49ff!important;
+    background: #7a49FF1F 0 0 no-repeat padding-box!important
+}
+
+.rm-Sidebar .hub-sidebar-content {
+ 	    margin-bottom: 100px !important; 
+}
+
+/*! END HUB_CUSTOM_STYLES */
+
+.PageThumbs-helpful { 
+ 	    margin-bottom: 60px !important;   
+}
+
+.changelog-banner {
+    border-bottom: 1px solid var(--color-border-default);
+    padding: 30px 30px;
+    display: block;
+}
+
+.changelog-banner h1 {
+    text-align: center;
+    font-size: 1.9em;
+    font-weight: var(--markdown-title-weight);
+    line-height: 1.2;
+}
+
+.rm-Guides_loading::before { 
+	background: none !important;   
+}

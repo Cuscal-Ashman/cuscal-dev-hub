@@ -10,6 +10,8 @@
   --color-card-hover: #2d2d2d;
 }
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -22,12 +24,22 @@ body {
   color: var(--color-text);
   line-height: 1.5;
   overflow-x: hidden;
+  background:url('https://files.readme.io/9e787d83d737be60019f2b37965aee650dfa9295bc41875efa3df93d88581ba8-Home_-Desktop-bg.png');
+  background-repeat: round;
+}
+
+/* Override for mobile screens */
+@media (max-width: 640px) {
+  body {
+    background: url('https://files.readme.io/b5299b65f7e9292974e3c56fda16f5b570ff3a0ccdeb269b7b5a4d3816f0e497-Home-mobile-BG_1.png');
+    background-repeat: round;
+  }
 }
 
 .app {
   min-height: 100vh;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
 }
 
 /* Container */
@@ -179,7 +191,7 @@ body {
 /* Header */
 .header {
   position: relative;
-  z-index: 10;
+  z-index: 1000;
   border-bottom: 1px solid var(--color-border);
 }
 
@@ -708,4 +720,30 @@ body {
     margin: 0 auto 2rem;
     color: var(--color-text-muted);
   }
+}
+
+.rm-Header { 
+background: none;  
+
+}
+
+
+.main-footer { 
+display: none !important; 
+}
+
+.rm-Logo-img_lg { 
+height: 32px; 
+}
+
+.rm-Header-search { 
+	display: none; 
+}
+
+.rm-Guides_loading::before { 
+	background: none !important;   
+}
+
+.rm-Sidebar .hub-sidebar-content {
+ 	    margin-bottom: 100px !important; 
 }

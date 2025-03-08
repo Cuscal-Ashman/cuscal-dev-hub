@@ -1,18 +1,3 @@
-// Theme Toggle with Safe Event Listeners
-const lightModeButton = document.getElementById("lightMode");
-const darkModeButton = document.getElementById("darkMode");
-const body = document.body;
-
-if (lightModeButton && darkModeButton) {
-  lightModeButton.addEventListener("click", () => {
-    body.classList.remove("dark");
-  });
-
-  darkModeButton.addEventListener("click", () => {
-    body.classList.add("dark");
-  });
-}
-
 // Generate Feature Cards
 const featuresGrid = document.querySelector(".features-grid");
 
@@ -157,3 +142,29 @@ if (loginBtn) {
 
 
 
+// Custom 
+
+// Hide SSO login link if the user is logged in
+function hideSSOLinkBasedOnLoginStatus() {
+  var hubMeScript = document.getElementById("hub-me");
+  var jsonData = JSON.parse(hubMeScript.dataset.json);
+
+  // Select all links on the page with the specified href
+  var ssoLoginLinks = document.querySelectorAll('a[href="https://dash.readme.com/login/sso/cuscal-enterprise-parent-clone-teammates"]');
+	
+  // Hide the SSO login links if the user is logged in
+  if (ssoLoginLinks && jsonData.loggedIn === true) {
+    ssoLoginLinks.forEach(function(link) {
+      link.style.display = 'none';
+    });
+  }
+}
+
+// Wait until the DOM is fully loaded before executing SSO-hiding logic.
+document.addEventListener("DOMContentLoaded", function () {
+  hideSSOLinkBasedOnLoginStatus();
+});
+
+
+//hide the CTRL-K option shown in the Global Landing Page
+$(".rm-SearchToggle").hide();
